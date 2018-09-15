@@ -8,12 +8,8 @@ branches:
 notifications:
   email:
     recipients:
-    - j.bernal@upm.es
-services:
-- mysql
-before_install:
-- mysql -e 'CREATE DATABASE IF NOT EXISTS forge;'
+    - tomini18@hotmail.com
 script:
 - mvn verify
 - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
-- mvn sonar:sonar -Dsonar.organization=miw-upm-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR
+- mvn sonar:sonar -Dsonar.organization=tomas-teston-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR
