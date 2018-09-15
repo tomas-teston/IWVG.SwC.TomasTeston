@@ -1,7 +1,5 @@
 package es.upm.miw.iwvg.forge.junit;
 
-import com.sun.xml.internal.ws.developer.UsesJAXBContext;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
