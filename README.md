@@ -1,8 +1,21 @@
-# Práctica de Software Colaborativo
+> Práctica colaborativa sobre gestión de proyectos utilizando integración continua, testing unitario, control de código limpio y gestor de código.
+> [Máster en Ingeniería Web - Universidad Politécnica de Madrid (miw-upm)](http://miw.etsisi.upm.es)
+> ##### [Máster en Ingeniería Web - Universidad Politécnica de Madrid (miw-upm)](http://miw.etsisi.upm.es)
+> ##### Asignatura: *Ingeniería Web: Visión General*
+
+#Tecnologías empleadas:
+* Java
+* Maven
+* Travis-Cli 
+* Sonarcloud
+* Github.
+
 ## Estado del código
 [![Build Status](https://travis-ci.org/tomas-teston/IWVG.SwC.TomasTeston.svg?branch=master)](https://travis-ci.org/tomas-teston/IWVG.SwC.TomasTeston)
 
 ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw:IWVG.SwC.TomasTeston&metric=alert_status)
+
+# Enunciado
 ## Descripción del proyecto
 Se parte de un proyecto ya desarrollado, y se pretende realizar una ampliación del mismo.
 
