@@ -38,7 +38,7 @@ Las posibles ampliaciones podrían ser las siguientes:
 
 Se pueden realizar otras, pero cuidado!!! es responsabilidad del Arquitecto finalizar la ampliación del proyecto :-o.
 
-#####Features
+##### Features
 
 Las mejoras se publicarán con un formato a elección del `Arquitecto`, y deberá describirlo en la Wiki. Deberán tener plazos temporales.
 
