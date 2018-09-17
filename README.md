@@ -1,4 +1,8 @@
 # Práctica de Software Colaborativo
+## Estado del código
+[![Build Status](https://travis-ci.org/tomas-teston/IWVG.SwC.TomasTeston.svg?branch=master)](https://travis-ci.org/tomas-teston/IWVG.SwC.TomasTeston)
+
+![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw:IWVG.SwC.TomasTeston&metric=alert_status)
 ## Descripción del proyecto
 Se parte de un proyecto ya desarrollado, y se pretende realizar una ampliación del mismo.
 
