@@ -8,11 +8,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class PointTest {
     private Point point;
     private Point secondPoint;
+    private Point thirdPoint;
 
     @BeforeEach
     void before() {
         point = new Point(2, 3);
         secondPoint = new Point(1, 2);
+        thirdPoint = new Point(5,7);
     }
 
     @Test
@@ -57,6 +59,12 @@ class PointTest {
     void testSetCoorX(){
         this.secondPoint.setX(3);
         assertEquals(3, this.secondPoint.getX());
+    }
+
+    @Test
+    void testSetCoorY() {
+        this.thirdPoint.setY(4);
+        assertEquals(4,this.thirdPoint.getY());
     }
 
 }
