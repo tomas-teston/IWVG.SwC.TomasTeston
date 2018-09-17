@@ -40,6 +40,10 @@ public class Point {
         return this.y;
     }
 
+    public void setX(int x) {
+        this.x = x;
+    }
+
     @Override
     public String toString() {
         return "Point{" +
