@@ -11,10 +11,12 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class FractionTest {
 
     private Fraction fraction;
+    private Fraction propiaFraction;
 
     @BeforeEach
     void beforeEach() {
         this.fraction = new Fraction(10, 2);
+        this.propiaFraction= new Fraction(1,5);
     }
 
     @Test
@@ -36,6 +38,12 @@ public class FractionTest {
     void divisionByZero() {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, ()-> new Fraction( 10, 0).decimal());
         LogManager.getLogger(this.getClass()).debug(exception.getMessage());
+    }
+
+    @Test
+    void testIsPropia() {
+        assertEquals(true, this.propiaFraction.isPropia());
+        assertEquals(false, this.fraction.isPropia());
     }
 
 
