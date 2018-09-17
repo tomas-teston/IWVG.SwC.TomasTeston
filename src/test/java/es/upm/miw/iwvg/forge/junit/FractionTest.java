@@ -34,7 +34,7 @@ public class FractionTest {
 
     @Test
     void divisionByZero() {
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new Fraction(10,0).decimal());
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, ()-> new Fraction( 10, 0).decimal());
         LogManager.getLogger(this.getClass()).debug(exception.getMessage());
     }
 
