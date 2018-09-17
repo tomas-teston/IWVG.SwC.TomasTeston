@@ -44,6 +44,10 @@ public class Point {
         this.x = x;
     }
 
+    public void setY(int y) {
+        this.y = y;
+    }
+
     @Override
     public String toString() {
         return "Point{" +
