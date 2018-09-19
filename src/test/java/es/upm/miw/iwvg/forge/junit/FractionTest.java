@@ -1,12 +1,10 @@
 package es.upm.miw.iwvg.forge.junit;
 
 import org.apache.logging.log4j.LogManager;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class FractionTest {
 
@@ -16,7 +14,7 @@ public class FractionTest {
     @BeforeEach
     void beforeEach() {
         this.fraction = new Fraction(10, 2);
-        this.propiaFraction= new Fraction(1,5);
+        this.propiaFraction = new Fraction(1, 5);
     }
 
     @Test
@@ -36,7 +34,7 @@ public class FractionTest {
 
     @Test
     void divisionByZero() {
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, ()-> new Fraction( 10, 0).decimal());
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new Fraction(10, 0).decimal());
         LogManager.getLogger(this.getClass()).debug(exception.getMessage());
     }
 
@@ -44,6 +42,21 @@ public class FractionTest {
     void testIsPropia() {
         assertEquals(true, this.propiaFraction.isPropia());
         assertEquals(false, this.fraction.isPropia());
+    }
+
+    @Test
+    void testIsEquivalent() {
+        assertTrue(new Fraction(1, 2).isEquivalent(new Fraction(2, 4)));
+    }
+
+    @Test
+    void testIsNotEquivalent() {
+        assertFalse(new Fraction(1, 2).isEquivalent(new Fraction(3, 4)));
+    }
+
+    @Test
+    void testIsNotEquivalentToNullFraction() {
+        assertFalse(new Fraction(1, 2).isEquivalent(null));
     }
 
 
