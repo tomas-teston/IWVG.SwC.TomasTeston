@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class UserTest {
 
@@ -12,7 +12,7 @@ public class UserTest {
 
     @BeforeEach
     void beforeEach() {
-        user = new User(1,"Tomy", "Gutierrez");
+        user = new User(1, "Tomy", "Gutierrez");
     }
 
     @Test
@@ -35,5 +35,14 @@ public class UserTest {
         assertEquals("Gutierrez", this.user.getFamilyName());
     }
 
+    @Test
+    void testNameToUpperCase() {
+        assertEquals("TOMY", this.user.nameToUpperCase());
+    }
+
+    @Test
+    void testNameToUpperCaseIsNull() {
+        assertNull(new User(0, null, null).nameToUpperCase());
+    }
 
 }
