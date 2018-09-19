@@ -55,9 +55,19 @@ public class FractionTest {
     }
 
     @Test
-    void testIsNotEquivalentToNullFraction() {
-        assertFalse(new Fraction(1, 2).isEquivalent(null));
+    void testIsImpropia() {
+        assertTrue(new Fraction(10, 2).isImpropia());
     }
 
+    @Test
+    void testIsNotImpropia() {
+        assertFalse(new Fraction(2, 10).isImpropia());
+    }
+
+    @Test
+    void testIsImpropiaArithmeticExceptionIfEmpty() {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new Fraction(10, 0).isImpropia());
+        LogManager.getLogger(this.getClass()).debug(exception.getMessage());
+    }
 
 }

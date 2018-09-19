@@ -67,4 +67,13 @@ public class Fraction {
 
         return numerator * fraction.getDenominator() == denominator * fraction.getNumerator();
     }
+
+    public boolean isImpropia() {
+        if (this.getDenominator() == 0) {
+            throw new IllegalArgumentException("El denominador no puede ser 0");
+        }
+
+        return Integer.compare(this.numerator, this.denominator) <= 0 ? false : true;
+
+    }
 }
