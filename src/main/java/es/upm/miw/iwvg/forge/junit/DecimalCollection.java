@@ -50,4 +50,13 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double valuePosition(int position) {
+        assert collection != null;
+        if (this.collection.isEmpty()) {
+            throw new ArithmeticException(("Empty collection"));
+        }
+        double value = this.collection.get(position);
+        return value;
+    }
+
 }
