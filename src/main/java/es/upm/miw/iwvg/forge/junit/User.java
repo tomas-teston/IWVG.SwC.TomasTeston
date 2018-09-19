@@ -15,11 +15,20 @@ public class User {
     }
 
     private String format(String string) {
-        return string.trim().substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
+        StringBuilder builder = new StringBuilder();
+        if (isNotEmpty(string)) {
+            builder.append(string.trim().substring(0, 1).toUpperCase());
+            if (string.length() > 1) {
+                builder.append(string.substring(1).toLowerCase());
+            }
+        }
+
+        return builder.toString();
     }
 
+
     public String fullName() {
-        return this.name + " " + this.familyName;
+        return new String("" + this.name + " " + this.familyName).trim();
     }
 
     public String initials() {
@@ -36,6 +45,14 @@ public class User {
 
     public String getFamilyName() {
         return this.familyName;
+    }
+
+    public String nameToUpperCase() {
+        return isNotEmpty(this.name) ? this.name.toUpperCase() : null;
+    }
+
+    private boolean isNotEmpty(String s) {
+        return s != null && s.length() > 0;
     }
 
 }
