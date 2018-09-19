@@ -51,4 +51,15 @@ class DecimalCollectionTest {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
 
+    @Test
+    void testValuePosition() {
+        assertEquals(2.0, this.decimalCollection.valuePosition(0));
+    }
+
+    @Test
+    void testValuePositionArithmeticExceptionIfEmpty() {
+        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> new DecimalCollection().valuePosition(1));
+        LogManager.getLogger(this.getClass()).debug(exception.getMessage());
+    }
+
 }
