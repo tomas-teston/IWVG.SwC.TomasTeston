@@ -43,12 +43,4 @@ public class UserTest {
         assertEquals("TOMY", user.getName());
     }
 
-    @Test
-    void testNameToUpperCaseWhenNameIsNull() {
-        User user = new User(0, null, null);
-        user.nameToUpperCase();
-
-        assertNull(user.getName());
-    }
-
 }
