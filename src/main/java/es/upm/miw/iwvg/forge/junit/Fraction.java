@@ -65,7 +65,7 @@ public class Fraction {
             return false;
         }
 
-        return numerator * fraction.getDenominator() == denominator * fraction.getNumerator();
+        return (numerator * fraction.getDenominator()) == (denominator * fraction.getNumerator());
     }
 
     public boolean isImpropia() {
