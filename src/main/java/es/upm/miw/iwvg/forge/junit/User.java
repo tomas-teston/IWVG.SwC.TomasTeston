@@ -15,15 +15,7 @@ public class User {
     }
 
     private String format(String string) {
-        StringBuilder builder = new StringBuilder();
-        if (isNotEmpty(string)) {
-            builder.append(string.trim().substring(0, 1).toUpperCase());
-            if (string.length() > 1) {
-                builder.append(string.substring(1).toLowerCase());
-            }
-        }
-
-        return builder.toString();
+        return string.trim().substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 
 
