@@ -28,7 +28,7 @@ public class User {
 
 
     public String fullName() {
-        return new String("" + this.name + " " + this.familyName).trim();
+        return this.name + " " + this.familyName;
     }
 
     public String initials() {

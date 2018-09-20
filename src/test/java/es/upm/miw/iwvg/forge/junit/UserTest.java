@@ -18,8 +18,6 @@ public class UserTest {
     @Test
     void testFullName() {
         assertEquals("Tomy Gutierrez", this.user.fullName());
-        User u = new User(0, null, null);
-        u.fullName();
     }
 
     @Test
