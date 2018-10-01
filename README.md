@@ -3,7 +3,7 @@
 > ##### [Máster en Ingeniería Web - Universidad Politécnica de Madrid (miw-upm)](http://miw.etsisi.upm.es)
 > ##### Asignatura: *Ingeniería Web: Visión General*
 
-#Tecnologías empleadas:
+# Tecnologías empleadas:
 * Java
 * Maven
 * Travis-Cli 
@@ -57,7 +57,7 @@ Las mejoras se publicarán con un formato a elección del `Arquitecto`, y deber�
 
 No olvidéis, si con tanto cambio se produce descontrol y pánico!!! enfocar un commit estable, hacer reset mediante el menú contextual y marcar Hard
 
-##Pasos a seguir:
+## Pasos a seguir:
 
 ### Fase 1. Integrantes de los proyectos
 
